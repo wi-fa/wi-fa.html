@@ -8,9 +8,7 @@
     display: flex;
     align-items: center;
     width: 300%;
-    /* gap: 5rem; */
     transition: transform 0.5s;
-    /* height: 60vh; */
 }
 
 .portfolio-info {
@@ -51,6 +49,10 @@
 .link-arrow {
     transition: 200ms ease;
     margin-left: 0.5rem;
+}
+
+#navigation {
+    margin-top: 4rem;
 }
 
 .slider-dots {
