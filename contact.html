@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Home page of a portfolio website for William Falk, a front-end developer from sweden"
+        />
+        <title>William Falk's Portfolio</title>
+        <link rel="stylesheet" href="/css/shared.css" />
+        <link rel="stylesheet" href="/css/contact.css" />
+        <link rel="stylesheet" href="/css/overlay.css" />
+        <script src="scripts/app.js" defer></script>
+    </head>
+    <body>
+        <div id="backdrop"></div>
+        <header>
+            <nav id="navbar">
+                <a href="">
+                    <img
+                        id="logo"
+                        typeof="svg"
+                        src="media/Favicon-01.svg"
+                        alt="logo"
+                    />
+                </a>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+                <button class="btn" id="lets-talk-btn">Let's Talk</button>
+            </nav>
+            <section id="hero-container">
+                <div class="lines">
+                    <div class="head-line-hor"></div>
+                    <div class="head-line-ver"></div>
+                </div>
+                <h1 id="hero-title">
+                    What's Up<span class="brand-color">?</span>
+                </h1>
+                <p>Contact me here!</p>
+            </section>
+            <aside class="modal" id="config-overlay">
+                <section>
+                    <h3>What's up?</h3>
+                    <p>
+                        If you have a question, hit me up on my email or any of
+                        my other socials!
+                    </p>
+                </section>
+                <section>
+                    <div id="modal-socails">
+                        <ul>
+                            <li>
+                                <a href="https://se.linkedin.com/in/william-falk-675581253"
+                                    ><img
+                                        src="media/icons/icons8-linkedin (1).svg"
+                                        alt="linkedin-icon"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="https://dribbble.com/wi-fa"
+                                    ><img
+                                        src="media/icons/icons8-dribble.svg"
+                                        alt="dribble-icon"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/wi-fa/"
+                                    ><img
+                                        src="media/icons/icons8-github (1).svg"
+                                        alt="github-icon"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="modal-email-phone">
+                        <ul>
+                            <li>
+                                <a href="mailto:wifawebbdesign@gmail.com"
+                                    >Wifawebbdesign@gmail.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="callto:+46706992289">+46706992289</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="close-modal-container">
+                        <button id="close-modal">Close</button>
+                    </div>
+                </section>
+            </aside>
+        </header>
+        <main id="contact-view">
+            <section class="contact-container">
+                <h2 ref="form" id="form-title">Let's build together!</h2>
+                <form action="" class="contact-form" spellcheck="false">
+                    <div id="form-row-1">
+                        <input
+                            type="text"
+                            name="from-name"
+                            autocomplete="off"
+                            placeholder="Firstname *"
+                            id="from-name"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="from-lastname"
+                            autocomplete="off"
+                            placeholder="Lastname *"
+                            id="from-lastname"
+                            required
+                        />
+                    </div>
+                    <div id="form-row-2">
+                        <input
+                            type="email"
+                            name="email"
+                            autocomplete="off"
+                            placeholder="Email *"
+                            id="email"
+                            required
+                        />
+                        <input
+                            type="tel"
+                            name="tel"
+                            autocomplete="off"
+                            placeholder="Number *"
+                            pattern="[0-9]{10}"
+                            id="tel"
+                            required
+                        />
+                    </div>
+                    <div id="form-row-3">
+                        <input
+                            type="text"
+                            name="subject"
+                            autocomplete="off"
+                            placeholder="Subject *"
+                            id="subject"
+                            required
+                        />
+                    </div>
+                    <div id="form-row-4">
+                        <input
+                            type="text"
+                            name="message"
+                            autocomplete="off"
+                            placeholder="Message *"
+                            id="message"
+                            required
+                        />
+                    </div>
+                    <div id="form-btn">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </section>
+            <section id="contact-text-container">
+                <h2 id="contact-text-header">Ideas?</h2>
+                <p id="contact-text-paragrapgh">
+                    I am always curious about new projects. Unfortunately I have
+                    to spend most of my time on my studies but dont hesitate to
+                    share your ideas. If i am available i will help you!
+                </p>
+            </section>
+        </main>
+        <footer>
+            <section class="foot">
+                <p>Powered by</p>
+
+                <p>
+                    &copy;
+                    <span class="brand-color">William Falk</span> 2023
+                </p>
+
+                <p>All rights reserved</p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/wi-fa/"
+                            ><img
+                                src="media/icons/icons8-octocat (1).svg"
+                                alt="octocat"
+                        /></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://se.linkedin.com/in/william-falk-675581253"
+                            ><img
+                                src="media/icons/icons8-linkedin (1).svg"
+                                alt="linkedin-icon"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/wi-fa"
+                            ><img
+                                src="media/icons/icons8-dribble.svg"
+                                alt="dribble-icon"
+                        /></a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>
