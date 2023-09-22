@@ -62,10 +62,10 @@
 }
 
 #memoji-container img {
-    width: 24rem;
+    width: 20rem;
     position: relative;
-    top: -1.5rem;
-    margin-right: -3px;
+    top: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 /* Second card */
@@ -147,6 +147,7 @@
 
     /* card-1 */
     #memoji-container img {
+        top: -1.9rem;
         width: 13rem;
     }
 
@@ -196,4 +197,29 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .all-cards {
+        height: 10rem;
+    }
 
+    #memoji-container img {
+        width: 9rem;
+        top: -3rem;
+    }
+
+    #contact-img-container img {
+        width: 20rem;
+    }
+
+    #skills-list-container ul {
+        margin: 0;
+        padding: 0;
+        top: 0.5rem;
+    }
+
+    #portfolio-img-container img {
+        width: 7rem;
+        top: 1rem;
+        left: -1rem;
+    }
+}
