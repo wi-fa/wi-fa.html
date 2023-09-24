@@ -1,11 +1,12 @@
 @import '/css/shared.css';
 
-/* 1. Main section layout */
-
+/* Description */
 /* 1. Main section layouts */
 /* 2. Form styles (Left section) */
 /* 3. Contact text (Right section) */
-/* Mediaquerys */
+/* 4. Mediaquerys */
+
+/* 1. Main section layouts */
 
 #contact-view {
     display: flex;
@@ -111,6 +112,7 @@ input:active {
     margin-top: 0;
 }
 
+/* 4. Mediaquerys */
 @media screen and (max-width: 840px) {
     #contact-view {
         padding: 0;
@@ -137,6 +139,8 @@ input:active {
     }
 }
 
+
+/* Mediaquerys for smaller screens */
 @media screen and (max-width: 450px) {
     #form-title {
         margin-left: 0rem;
@@ -151,7 +155,7 @@ input:active {
     }
 
     input {
-        padding-left: 1rem;
+        text-align: center;
         margin-left: -0.5rem;
         margin-right: 0rem;
     }

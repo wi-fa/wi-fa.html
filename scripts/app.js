@@ -1,3 +1,4 @@
+// Description
 // 1. Let's Talk modal
 // 2. Portfolio image slider
 
@@ -35,38 +36,41 @@ closeModalBtn.addEventListener('click', closeModal)
 backdropElement.addEventListener('click', closeModal)
 
 // 2. Portfolio image slider
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider')
+    const slides = document.querySelectorAll('.slide')
+    const dotsContainer = document.querySelector('.slider-dots')
 
-const slides = document.querySelectorAll('.slider-slide')
-const dots = document.querySelectorAll('.slider-dot')
-let currentSlide = 0
+    let currentSlide = 0
 
-function showSlide(index) {
-    slides.forEach((slide) => {
-        slide.style.display = 'none'
+    // Create navigation dots for each slide
+
+    slides.forEach((slide, index) => {
+        const dot = document.createElement('div')
+        dot.classList.add('dot')
+        dot.addEventListener('click', () => {
+            goToSlide(index)
+        })
+        dotsContainer.appendChild(dot)
     })
-    slides[index].style.display = 'block'
-}
 
-function updateDots() {
-    dots.forEach((dot, i) => {
-        dot.classList.remove('active')
-        if (i === currentSlide) {
-            dot.classList.add('active')
-        }
-    })
-}
+    const dots = document.querySelectorAll('.dot')
 
-showSlide(currentSlide)
-updateDots()
+    function goToSlide(slideIndex) {
+        if (slideIndex < 0 || slideIndex >= slides.length) return
 
-dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-        currentSlide = i
-        showSlide(currentSlide)
-        updateDots()
-    })
+        currentSlide = slideIndex
+        slider.style.transform = `translateX(-${slideIndex * 100}%)`
+
+        // Update active dot
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide)
+        })
+    }
+
+    // Initial slide
+    goToSlide(currentSlide)
 })
-
 
 // Link arrow animation
 const portfolioLinks = document.getElementsByClassName('portfolio-link')

@@ -31,13 +31,14 @@ main {
 }
 
 #text-and-photo p {
-    /* padding-right: 3rem; */
-    /* width: 60vw; */
     font-size: 1.9vw;
-    letter-spacing: 2px;
+
     font-weight: 200;
     color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: none;
 }
+
 /* 2. Skill-section */
 
 #skills {
@@ -58,7 +59,9 @@ main {
 }
 
 #skills-and-experince p {
-    letter-spacing: 2px;
+    font-size: 1.2rem;
+    margin: 0 3rem;
+    /* letter-spacing: 2px; */
 }
 
 #about-me-skills ul {
@@ -74,6 +77,8 @@ main {
 #about-me-skills ul li a img {
     width: 4rem;
 }
+
+/* 3. Mediaquerys */
 
 @media screen and (max-width: 840px) {
     main {
@@ -103,8 +108,12 @@ main {
         gap: 1rem;
         margin-top: 3rem;
     }
+    #skills-and-experince p {
+        margin: 0;
+    }
 }
 
+/* Mediaquerys for smaller screens */
 @media screen and (max-width: 420px) {
     #about-me-skills ul {
         grid-template-columns: 1fr 1fr 1fr;

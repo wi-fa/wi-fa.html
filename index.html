@@ -5,16 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="The home page of a portfolio website for William Falk, a front-end developer from sweden"
+            content="Home page of a portfolio website for William Falk, a front-end developer from sweden"
         />
         <title>William Falk's Portfolio</title>
+
+        <!-- CSS -->
         <link rel="stylesheet" href="/css/shared.css" />
         <link rel="stylesheet" href="/css/home.css" />
         <link rel="stylesheet" href="/css/overlay.css" />
+
+        <!-- JavaScript -->
         <script src="scripts/app.js" defer></script>
+
+        <!-- Favicon -->
+        <link rel="icon" href="/media/Favicon-01.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
+        <!-- Backdrop for modal -->
         <div id="backdrop"></div>
+        <!-- End of backdrop -->
+
+        <!-- Navbar -->
         <header>
             <nav id="navbar">
                 <a href="">
@@ -33,6 +45,9 @@
                 </ul>
                 <button class="btn" id="lets-talk-btn">Let's Talk</button>
             </nav>
+            <!-- End of navbar -->
+
+            <!-- Hero -->
             <section id="hero-container">
                 <div class="lines">
                     <div class="head-line-hor"></div>
@@ -43,6 +58,9 @@
                 </h1>
                 <p>My name is William, a Front-End Developer student.</p>
             </section>
+            <!-- End of hero -->
+
+            <!-- Modal (Only displayed if klicked navbar-button) -->
             <aside class="modal" id="config-overlay">
                 <section>
                     <h3>What's up?</h3>
@@ -55,14 +73,15 @@
                     <div id="modal-socails">
                         <ul>
                             <li>
-                                <a href="https://se.linkedin.com/in/william-falk-675581253"
+                                <a
+                                    href="https://se.linkedin.com/in/william-falk-675581253"
                                     ><img
-                                        src="media/icons/icons8-linkedin (1).svg"
+                                        src="media/icons/icons8-linkedin(1).svg"
                                         alt="linkedin-icon"
                                 /></a>
                             </li>
                             <li>
-                                <a href="https://dribbble.com/wi-fa"
+                                <a href="https://dribble.com/wi-fa/"
                                     ><img
                                         src="media/icons/icons8-dribble.svg"
                                         alt="dribble-icon"
@@ -71,7 +90,7 @@
                             <li>
                                 <a href="https://github.com/wi-fa/"
                                     ><img
-                                        src="media/icons/icons8-github (1).svg"
+                                        src="media/icons/icons8-github(1).svg"
                                         alt="github-icon"
                                 /></a>
                             </li>
@@ -94,92 +113,105 @@
                     </div>
                 </section>
             </aside>
+            <!-- End of modal -->
         </header>
 
         <main>
+            <!-- Main section with cards -->
             <section id="home-content">
                 <div id="cards-container">
+                    <!-- Card 1 -->
                     <div class="all-cards" id="card-1">
-                        <div class="card">
-                            <p>FRONT-END STUDENT</p>
-                            <h2>Me</h2>
-                        </div>
-                        <div class="card-img" id="memoji-container">
-                            <img src="media/memo.svg" alt="memoji-image" />
-                        </div>
+                        <a href="about.html">
+                            <div class="card">
+                                <p>FRONT-END STUDENT</p>
+                                <h2>Me</h2>
+                            </div>
+                            <div class="card-img" id="memoji-container">
+                                <img
+                                    src="media/memojiwifa.png"
+                                    alt="memoji-image"
+                                />
+                            </div>
+                        </a>
                     </div>
 
+                    <!-- Card 2 -->
                     <div class="all-cards" id="card-2">
-                        <div class="card">
-                            <p>PROJECT IDEA?</p>
-                            <h2>Contact</h2>
-                        </div>
-                        <div class="card-img" id="contact-img-container">
-                            <img
-                                src="media/Frame.svg"
-                                alt="frameword-example"
-                            />
-                        </div>
+                        <a href="contact.html">
+                            <div class="card">
+                                <p>PROJECT IDEA?</p>
+                                <h2>Contact</h2>
+                            </div>
+                            <div class="card-img" id="contact-img-container">
+                                <img
+                                    src="media/Frame.svg"
+                                    alt="frameword-example"
+                                />
+                            </div>
+                        </a>
                     </div>
 
+                    <!-- Card 3 -->
                     <div class="all-cards" id="card-3">
-                        <div class="card">
-                            <p>TOOLBOX?</p>
-                            <h2>Skill Examples</h2>
-                        </div>
-                        <div id="skills-list-container">
-                            <ul>
-                                <li>
-                                    <a href="about.html"
-                                        ><img
+                        <a href="about.html#skills">
+                            <div class="card">
+                                <p>TOOLBOX?</p>
+                                <h2>Skill Examples</h2>
+                            </div>
+                            <div id="skills-list-container">
+                                <ul>
+                                    <li>
+                                        <img
                                             src="media/icons/html.svg"
                                             alt="html-icon"
-                                    /></a>
-                                </li>
-
-                                <li>
-                                    <a href="about.html"
-                                        ><img
+                                        />
+                                    </li>
+                                    <li>
+                                        <img
                                             src="media/icons/js.svg"
                                             alt="javascript-icon"
-                                    /></a>
-                                </li>
-
-                                <li>
-                                    <a href="about.html"
-                                        ><img
+                                        />
+                                    </li>
+                                    <li>
+                                        <img
                                             src="media/icons/mongodb-icon.svg"
                                             alt="mongodb-icon"
-                                    /></a>
-                                </li>
-
-                                <li>
-                                    <a href="about.html"
-                                        ><img
+                                        />
+                                    </li>
+                                    <li>
+                                        <img
                                             src="media/icons/figma.svg"
                                             alt="figma-icon"
-                                    /></a>
-                                </li>
-                            </ul>
-                        </div>
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
 
+                    <!-- Card 4 -->
                     <div class="all-cards" id="card-4">
-                        <div class="card">
-                            <p>LEGACY</p>
-                            <h2>Portfolio</h2>
-                        </div>
-                        <div class="card-img" id="portfolio-img-container">
-                            <img
-                                id="portfolio-example"
-                                src="media/Frame 4.svg"
-                                alt="frameword-example"
-                            />
-                        </div>
+                        <a href="portfolio.html">
+                            <div class="card">
+                                <p>LEGACY</p>
+                                <h2>Portfolio</h2>
+                            </div>
+                            <div class="card-img" id="portfolio-img-container">
+                                <img
+                                    id="portfolio-example"
+                                    src="media/Frame4.svg"
+                                    alt="frameword-example"
+                                />
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
+            <!-- End of card-section -->
         </main>
+
+        <!-- Footer-section -->
         <footer>
             <section class="foot">
                 <p>Powered by</p>
@@ -194,7 +226,8 @@
                     <li>
                         <a href="https://github.com/wi-fa/"
                             ><img
-                                src="media/icons/icons8-octocat (1).svg"
+                                id="octacat"
+                                src="media/icons/icons8-octocat(1).svg"
                                 alt="octocat"
                         /></a>
                     </li>
@@ -202,7 +235,7 @@
                         <a
                             href="https://se.linkedin.com/in/william-falk-675581253"
                             ><img
-                                src="media/icons/icons8-linkedin (1).svg"
+                                src="media/icons/icons8-linkedin(1).svg"
                                 alt="linkedin-icon"
                         /></a>
                     </li>
@@ -216,5 +249,6 @@
                 </ul>
             </section>
         </footer>
+        <!-- End of footer -->
     </body>
 </html>

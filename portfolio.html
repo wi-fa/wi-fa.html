@@ -8,13 +8,25 @@
             content="The portfolio page for William Falk, a front-end developer from sweden"
         />
         <title>William Falk's Portfolio</title>
+
+        <!-- CSS -->
         <link rel="stylesheet" href="/css/shared.css" />
         <link rel="stylesheet" href="/css/portfolio.css" />
         <link rel="stylesheet" href="/css/overlay.css" />
+
+        <!-- JavaScript -->
         <script src="scripts/app.js" defer></script>
+
+        <!-- Favicon -->
+        <link rel="icon" href="/media/Favicon-01.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
+        <!-- Backdrop for modal -->
         <div id="backdrop"></div>
+        <!-- End of backdrop -->
+
+        <!-- Navbar -->
         <header>
             <nav id="navbar">
                 <a href="">
@@ -33,6 +45,9 @@
                 </ul>
                 <button class="btn" id="lets-talk-btn">Let's Talk</button>
             </nav>
+            <!-- End of navbar -->
+
+            <!-- Hero -->
             <section id="hero-container">
                 <div class="lines">
                     <div class="head-line-hor"></div>
@@ -43,6 +58,9 @@
                 </h1>
                 <p>Previous projects.</p>
             </section>
+            <!-- End of hero -->
+
+            <!-- Modal (Only displayed if navbar button is clicked) -->
             <aside class="modal" id="config-overlay">
                 <section>
                     <h3>What's up?</h3>
@@ -55,14 +73,15 @@
                     <div id="modal-socails">
                         <ul>
                             <li>
-                                <a href="https://se.linkedin.com/in/william-falk-675581253"
+                                <a
+                                    href="https://se.linkedin.com/in/william-falk-675581253"
                                     ><img
-                                        src="media/icons/icons8-linkedin (1).svg"
+                                        src="media/icons/icons8-linkedin(1).svg"
                                         alt="linkedin-icon"
                                 /></a>
                             </li>
                             <li>
-                                <a href="https://dribbble.com/wi-fa"
+                                <a href="https://dribble.com/wi-fa/"
                                     ><img
                                         src="media/icons/icons8-dribble.svg"
                                         alt="dribble-icon"
@@ -71,7 +90,7 @@
                             <li>
                                 <a href="https://github.com/wi-fa/"
                                     ><img
-                                        src="media/icons/icons8-github (1).svg"
+                                        src="media/icons/icons8-github(1).svg"
                                         alt="github-icon"
                                 /></a>
                             </li>
@@ -94,18 +113,21 @@
                     </div>
                 </section>
             </aside>
+            <!-- End of modal -->
         </header>
-        <main class="slider">
-            <!-- First slide  -->
-            <section class="slider-slide" id="portfolio-section">
-                <article class="slider-container" id="bed-and-breakfast-slide">
-                    <div class="portfolio-info">
-                        <h4 id="portfolio-title-h4">BOOKING APPLICATION</h4>
-                        <h3 id="portfolio-title-h3">Karkebo Bed & Breakfast</h3>
-                        <p id="portfolio-p-1">
+
+        <!-- Main section with image-slider -->
+        <main class="slider-container">
+            <section class="slider">
+                <!-- First slide -->
+                <article class="slide">
+                    <div class="slide-content">
+                        <h4 class="portfolio-title-h4">BOOKING APPLICATION</h4>
+                        <h3 class="portfolio-title-h3">Karkebo Bed & Breakfast</h3>
+                        <p class="portfolio-p-1">
                             Bed & Breakfast webiste for a local family business.
                         </p>
-                        <p id="portfolio-p-2">
+                        <p class="portfolio-p-2">
                             <strong>Built with: </strong>Wordpress, Aquentro,
                             Elementor, WooCommerce Motopress, Custom Klarna
                             Integration, WordPress-MultiLingual (cPanel
@@ -114,84 +136,77 @@
                         <a
                             class="portfolio-link"
                             href="https://bedandbreakfast.karkebo.se"
-                            ><strong id="link-animation"
+                            ><strong class="link-animation"
                                 >Visit the app
                                 <span class="link-arrow">&#10217;</span></strong
                             ></a
                         >
                     </div>
-                    <div class="portfolio-image">
-                        <img src="/media/bed.png" alt="portfolio-example" />
+                    <div class="slide-image">
+                        <img src="media/bed.png" alt="slide-1" />
                     </div>
                 </article>
-            </section>
-            <!-- End of first slide -->
+                <!-- End of slide 1 -->
 
-            <!-- Second slide -->
-            <section class="slider-slide" id="portfolio-section">
-                <article class="slider-container" id="sweets-slide">
-                    <div class="portfolio-info">
-                        <h4 id="portfolio-title-h4">E-COMMERCE APPLICATION</h4>
-                        <h3 id="portfolio-title-h3">Sweets by Nova</h3>
-                        <p id="portfolio-p-1">
-                            Online store for for selling chocolate pralines
+                <!-- Slide 2 -->
+
+                <article class="slide">
+                    <div class="slide-content">
+                        <h4 class="portfolio-title-h4">E-COMMERCE APPLICATION</h4>
+                        <h3 class="portfolio-title-h3">Sweets by Nova</h3>
+                        <p class="portfolio-p-1">
+                            Online store for selling chocolate pralines.
                         </p>
-                        <p id="portfolio-p-2">
+                        <p class="portfolio-p-2">
                             <strong>Built with: </strong>Quickbutik, Google
                             Analytics, Custom Klarna Integration.
                         </p>
                         <a class="portfolio-link" href="https://sweetsbynova.se"
-                            ><strong id="link-animation"
+                            ><strong class="link-animation"
                                 >Visit the app
                                 <span class="link-arrow">&#10217;</span></strong
                             ></a
                         >
                     </div>
-                    <div class="portfolio-image">
-                        <img src="/media/sweet.png" alt="portfolio-example" />
+                    <div class="slide-image">
+                        <img src="media/sweet.png" alt="slide-1" />
                     </div>
                 </article>
-            </section>
-            <!-- End of second slide -->
+                <!-- End of slide 2 -->
 
-            <!-- Third slide -->
-            <section class="slider-slide" id="portfolio-section">
-                <article class="slider-container" id="karkebo-slide">
-                    <div class="portfolio-info">
-                        <h4 id="portfolio-title-h4">E-COMMERCE APPLICATION</h4>
-                        <h3 id="portfolio-title-h3">Karkebo Produktion</h3>
-                        <p id="portfolio-p-1">
+                <!-- Slide 3 -->
+
+                <article class="slide">
+                    <div class="slide-content">
+                        <h4 class="portfolio-title-h4">E-COMMERCE APPLICATION</h4>
+                        <h3 class="portfolio-title-h3">Karkebo Produktion</h3>
+                        <p class="portfolio-p-1">
                             E-commerce application for a local family business.
                         </p>
-                        <p id="portfolio-p-2">
+                        <p class="portfolio-p-2">
                             <strong>Built with: </strong>Wordpress, Elementor,
                             Crocoblock, WooCommerce, Custom Klarna Integration,
                             WordPress-MultiLingual (cPanel Hosting).
                         </p>
                         <a class="portfolio-link" href="https://karkebo.se"
-                            ><strong id="link-animation"
+                            ><strong class="link-animation"
                                 >Visit the app
                                 <span class="link-arrow">&#10217;</span></strong
                             ></a
                         >
                     </div>
-                    <div class="portfolio-image">
-                        <img src="/media/kark.png" alt="portfolio-example" />
+                    <div class="slide-image">
+                        <img src="media/kark.png" alt="slide-1" />
                     </div>
                 </article>
+                <!-- End of slide 3 -->
             </section>
-            <!-- End of third slide -->
-
-            <!-- Slider navigation -->
-            <section id="navigation">
-                <ul class="slider-dots">
-                    <li class="slider-dot" data-index="0"></li>
-                    <li class="slider-dot" data-index="1"></li>
-                    <li class="slider-dot" data-index="2"></li>
-                </ul>
-            </section>
-            <!-- End of slider nav -->
+            <!-- Navigation dots -->
+            <div class="slider-dots"></div>
+            <!-- End of nav-dots -->
         </main>
+
+        <!-- Footer-section -->
         <footer>
             <section class="foot">
                 <p>Powered by</p>
@@ -206,14 +221,15 @@
                     <li>
                         <a href="https://github.com/wi-fa/"
                             ><img
-                                src="media/icons/icons8-octocat (1).svg"
+                                src="media/icons/icons8-octocat(1).svg"
                                 alt="octocat"
                         /></a>
                     </li>
                     <li>
-                        <a href="https://se.linkedin.com/in/william-falk-675581253"
+                        <a
+                            href="https://se.linkedin.com/in/william-falk-675581253"
                             ><img
-                                src="media/icons/icons8-linkedin (1).svg"
+                                src="media/icons/icons8-linkedin(1).svg"
                                 alt="linkedin-icon"
                         /></a>
                     </li>

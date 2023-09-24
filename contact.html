@@ -8,13 +8,25 @@
             content="Home page of a portfolio website for William Falk, a front-end developer from sweden"
         />
         <title>William Falk's Portfolio</title>
+
+        <!-- CSS -->
         <link rel="stylesheet" href="/css/shared.css" />
         <link rel="stylesheet" href="/css/contact.css" />
         <link rel="stylesheet" href="/css/overlay.css" />
+
+        <!-- JavaScript -->
         <script src="scripts/app.js" defer></script>
+
+        <!-- Favicon -->
+        <link rel="icon" href="/media/Favicon-01.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
+        <!-- Backdrop of modal -->
         <div id="backdrop"></div>
+        <!-- End of backdrop -->
+
+        <!-- Navbar -->
         <header>
             <nav id="navbar">
                 <a href="">
@@ -33,6 +45,9 @@
                 </ul>
                 <button class="btn" id="lets-talk-btn">Let's Talk</button>
             </nav>
+            <!-- End of navbar -->
+
+            <!-- Hero -->
             <section id="hero-container">
                 <div class="lines">
                     <div class="head-line-hor"></div>
@@ -43,6 +58,9 @@
                 </h1>
                 <p>Contact me here!</p>
             </section>
+            <!-- End of Hero -->
+
+            <!-- Modal (Only displayed if clicking navbar) -->
             <aside class="modal" id="config-overlay">
                 <section>
                     <h3>What's up?</h3>
@@ -55,14 +73,15 @@
                     <div id="modal-socails">
                         <ul>
                             <li>
-                                <a href="https://se.linkedin.com/in/william-falk-675581253"
+                                <a
+                                    href="https://se.linkedin.com/in/william-falk-675581253"
                                     ><img
-                                        src="media/icons/icons8-linkedin (1).svg"
+                                        src="media/icons/icons8-linkedin(1).svg"
                                         alt="linkedin-icon"
                                 /></a>
                             </li>
                             <li>
-                                <a href="https://dribbble.com/wi-fa"
+                                <a href="https://dribble.com/wi-fa/"
                                     ><img
                                         src="media/icons/icons8-dribble.svg"
                                         alt="dribble-icon"
@@ -71,7 +90,7 @@
                             <li>
                                 <a href="https://github.com/wi-fa/"
                                     ><img
-                                        src="media/icons/icons8-github (1).svg"
+                                        src="media/icons/icons8-github(1).svg"
                                         alt="github-icon"
                                 /></a>
                             </li>
@@ -94,11 +113,14 @@
                     </div>
                 </section>
             </aside>
+            <!-- End of modal -->
         </header>
+
         <main id="contact-view">
+            <!-- Main section with conatct form -->
             <section class="contact-container">
-                <h2 ref="form" id="form-title">Let's build together!</h2>
-                <form action="" class="contact-form" spellcheck="false">
+                <h2 id="form-title">Let's build together!</h2>
+                <form action="#" class="contact-form" spellcheck="false">
                     <div id="form-row-1">
                         <input
                             type="text"
@@ -161,6 +183,9 @@
                     </div>
                 </form>
             </section>
+            <!-- Contact-form end -->
+
+            <!-- Contact-form info text -->
             <section id="contact-text-container">
                 <h2 id="contact-text-header">Ideas?</h2>
                 <p id="contact-text-paragrapgh">
@@ -169,7 +194,10 @@
                     share your ideas. If i am available i will help you!
                 </p>
             </section>
+            <!-- End of text -->
         </main>
+
+        <!-- Footer-section -->
         <footer>
             <section class="foot">
                 <p>Powered by</p>
@@ -184,7 +212,7 @@
                     <li>
                         <a href="https://github.com/wi-fa/"
                             ><img
-                                src="media/icons/icons8-octocat (1).svg"
+                                src="media/icons/icons8-octocat(1).svg"
                                 alt="octocat"
                         /></a>
                     </li>
@@ -192,7 +220,7 @@
                         <a
                             href="https://se.linkedin.com/in/william-falk-675581253"
                             ><img
-                                src="media/icons/icons8-linkedin (1).svg"
+                                src="media/icons/icons8-linkedin(1).svg"
                                 alt="linkedin-icon"
                         /></a>
                     </li>
@@ -206,5 +234,6 @@
                 </ul>
             </section>
         </footer>
+        <!-- End of footer -->
     </body>
 </html>

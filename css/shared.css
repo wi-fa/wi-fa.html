@@ -23,6 +23,8 @@
     }
 }
 
+/* Description */
+
 /* 1. Html and body settings */
 /* 2. Buttons and links */
 /* 3. Navbar */
@@ -121,11 +123,11 @@ a {
 @media screen and (max-width: 840px) {
     #navbar {
         flex-direction: column;
-        align-items: center ´;
+        align-items: center;
     }
 
     #logo {
-        margin: 1 auto;
+        margin: 0 auto;
     }
 
     .btn {
@@ -155,6 +157,25 @@ a {
     font-weight: 800;
     margin: -1rem 0 0 0;
     padding-left: 1.5rem;
+    animation: fadeInAnimation ease 2s, slideIn ease 1s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        margin-top: -3rem;
+    }
+    to {
+        margin-top: -1rem;
+    }
 }
 
 /* Hero paragraph */
@@ -226,6 +247,7 @@ main {
 .foot ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 0;
     margin-left: -3rem;
     gap: 3rem;
@@ -236,6 +258,10 @@ main {
     width: 2.5rem;
     margin: 1rem auto;
     transition: 200ms ease;
+}
+
+.foot img#octacat {
+    width: 2.2rem;
 }
 
 .foot img:hover {

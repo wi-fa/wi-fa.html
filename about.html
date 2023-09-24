@@ -8,13 +8,25 @@
             content="The about page for a portfolio website for William Falk, a front-end developer from sweden"
         />
         <title>William Falk's Portfolio</title>
+
+        <!-- CSS -->
         <link rel="stylesheet" href="/css/shared.css" />
         <link rel="stylesheet" href="/css/about.css" />
         <link rel="stylesheet" href="/css/overlay.css" />
+
+        <!-- JavaScript -->
         <script src="scripts/app.js" defer></script>
+
+        <!-- Favicon -->
+        <link rel="icon" href="/media/Favicon-01.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
+        <!-- Backdrop for modal -->
         <div id="backdrop"></div>
+        <!-- End of backdrop -->
+
+        <!-- Navbar -->
         <header>
             <nav id="navbar">
                 <a href="">
@@ -33,6 +45,9 @@
                 </ul>
                 <button class="btn" id="lets-talk-btn">Let's Talk</button>
             </nav>
+            <!-- End of navbar -->
+
+            <!-- Hero -->
             <section id="hero-container">
                 <div class="lines">
                     <div class="head-line-hor"></div>
@@ -43,6 +58,9 @@
                 </h1>
                 <p>Thank you wifey &#128154;</p>
             </section>
+            <!-- End of hero -->
+
+            <!-- Modal (Only displayed if clicked navbar-button) -->
             <aside class="modal" id="config-overlay">
                 <section>
                     <h3>What's up?</h3>
@@ -55,14 +73,15 @@
                     <div id="modal-socails">
                         <ul>
                             <li>
-                                <a href="https://se.linkedin.com/in/william-falk-675581253"
+                                <a
+                                    href="https://se.linkedin.com/in/william-falk-675581253"
                                     ><img
-                                        src="media/icons/icons8-linkedin (1).svg"
+                                        src="media/icons/icons8-linkedin(1).svg"
                                         alt="linkedin-icon"
                                 /></a>
                             </li>
                             <li>
-                                <a href="https://dribbble.com/wi-fa"
+                                <a href="https://dribble.com/wi-fa/"
                                     ><img
                                         src="media/icons/icons8-dribble.svg"
                                         alt="dribble-icon"
@@ -71,7 +90,7 @@
                             <li>
                                 <a href="https://github.com/wi-fa/"
                                     ><img
-                                        src="media/icons/icons8-github (1).svg"
+                                        src="media/icons/icons8-github(1).svg"
                                         alt="github-icon"
                                 /></a>
                             </li>
@@ -94,9 +113,11 @@
                     </div>
                 </section>
             </aside>
+            <!-- End of modal -->
         </header>
 
         <main>
+            <!-- Main section with about me content -->
             <section id="about-content">
                 <article>
                     <h3>Front-End Student / JavaScript Lover / Monkey</h3>
@@ -120,7 +141,9 @@
                     </div>
                 </article>
             </section>
+            <!-- End of about me texts -->
 
+            <!-- My skill section -->
             <section id="skills">
                 <article id="skills-and-experince">
                     <h2>Skills & Experience</h2>
@@ -129,8 +152,8 @@
                         HTML, CSS, JavaScript, Building web application with Vue
                         or React, custom plugins, features, animation, and
                         coding interactive layouts. I also have some full-stack
-                        developer experience with NodeJS, MongoDB, ExpressJS and
-                        ofc one of the most popular open source CMS on the web -
+                        developer experience with Node, Mongodb, Express and ofc
+                        one of the most popular open source CMS on the web -
                         Wordpress
                     </p>
                 </article>
@@ -181,7 +204,7 @@
                         <li>
                             <a href=""
                                 ><img
-                                    src="/media/icons/icons8-express-js (1).svg"
+                                    src="/media/icons/icons8-express-js(1).svg"
                                     alt=""
                             /></a>
                         </li>
@@ -203,7 +226,10 @@
                     </ul>
                 </div>
             </section>
+            <!-- End of skill-section -->
         </main>
+
+        <!-- Footer-section -->
         <footer>
             <section class="foot">
                 <p>Powered by</p>
@@ -218,14 +244,15 @@
                     <li>
                         <a href="https://github.com/wi-fa/"
                             ><img
-                                src="media/icons/icons8-octocat (1).svg"
+                                src="media/icons/icons8-octocat(1).svg"
                                 alt="octocat"
                         /></a>
                     </li>
                     <li>
-                        <a href="https://se.linkedin.com/in/william-falk-675581253"
+                        <a
+                            href="https://se.linkedin.com/in/william-falk-675581253"
                             ><img
-                                src="media/icons/icons8-linkedin (1).svg"
+                                src="media/icons/icons8-linkedin(1).svg"
                                 alt="linkedin-icon"
                         /></a>
                     </li>

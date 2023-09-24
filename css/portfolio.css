@@ -1,43 +1,56 @@
 @import '/css/shared';
 
-.slider {
+/* Slider container styles */
+.slider-container {
+    position: relative;
+    width: 92%;
+    margin: 0 auto;
     overflow: hidden;
 }
 
-.slider-container {
+/* Slider content */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
     display: flex;
     align-items: center;
-    width: 300%;
-    transition: transform 0.5s;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.portfolio-info {
-    width: 45vw;
+.slider-content {
+    flex: 1;
+    padding-right: 20px;
 }
 
-.portfolio-image img {
-    width: 45vw;
+.slide-image img {
+    max-width: 45vw;
+    height: auto;
 }
 
-#portfolio-title-h4 {
+.portfolio-title-h4 {
     margin-bottom: 0.5rem;
     font-weight: 300;
     letter-spacing: 2px;
 }
 
-#portfolio-title-h3 {
+.portfolio-title-h3 {
     margin: 0;
     font-size: 5vw;
     font-weight: 800;
 }
 
-#portfolio-p-1 {
+.portfolio-p-1 {
     letter-spacing: 2px;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
-#portfolio-p-2 {
+.portfolio-p-2 {
     margin-bottom: 2rem;
 }
 
@@ -51,51 +64,52 @@
     margin-left: 0.5rem;
 }
 
-#navigation {
-    margin-top: 4rem;
-}
-
 .slider-dots {
-    list-style: none;
-    padding: 0;
-    gap: 1rem;
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
-.slider-dot {
+.dot {
     width: 1rem;
     height: 1rem;
-    background-color: rgb(43, 216, 144);
+    background-color: var(--one);
     border-radius: 50%;
+    margin: 0 5px;
     cursor: pointer;
 }
 
-.slider-dot.active {
-    background-color: rgb(29, 130, 87);
+.active {
+    background-color: var(--two);
 }
 
 @media screen and (max-width: 840px) {
-    .slider-container {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        display: block;
-        /* height: 80vh; */
+    .slide {
+        display: block !important;
     }
 
-    .portfolio-info {
-        width: 80vw;
-        margin: 0 2rem;
+    #portfolio-title-h4 {
+        margin-left: 3rem;
     }
 
-    .portfolio-image {
+    #portfolio-title-h3 {
+        margin-left: 3rem;
     }
 
-    .portfolio-image img {
-        position: relative;
-        width: 32%;
+    #portfolio-p-1 {
+        margin-left: 3rem;
+    }
+
+    #portfolio-p-2 {
+        margin-left: 3rem;
+    }
+
+    .portfolio-link {
+        margin-left: 3rem;
+    }
+
+    .slide img {
         margin-top: 2rem;
-        right: 0.7rem;
+        max-width: 90vw;
     }
 }

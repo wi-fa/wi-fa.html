@@ -31,7 +31,6 @@
 }
 
 #cards-container {
-    /* margin: 2rem; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -98,7 +97,7 @@
     list-style: none;
 }
 
-#skills-list-container ul li a img {
+#skills-list-container ul li img {
     width: 11rem;
 }
 
@@ -164,7 +163,7 @@
         top: 3rem;
     }
 
-    #skills-list-container ul li a img {
+    #skills-list-container ul li img {
         width: 6rem;
     }
 
@@ -192,11 +191,12 @@
         left: 2rem;
     }
 
-    #skills-list-container ul li a img {
+    #skills-list-container ul li img {
         width: 4rem;
     }
 }
 
+/* Mediaquery for the smaller screens */
 @media screen and (max-width: 400px) {
     .all-cards {
         height: 10rem;
@@ -205,6 +205,7 @@
     #memoji-container img {
         width: 9rem;
         top: -3rem;
+        left: -7rem;
     }
 
     #contact-img-container img {
